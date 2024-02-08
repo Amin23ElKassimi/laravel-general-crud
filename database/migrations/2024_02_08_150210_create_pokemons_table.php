@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             // Ino Pokemon database
             $table->string('name')->unique(); // Aggiungi una colonna per il nome del Pokémon
-            $table->string('type'); // Aggiungi una colonna per il tipo del Pokémon
+            $table->text('type'); // Aggiungi una colonna per il tipo del Pokémon
             $table->integer('level')->nullable(); // Aggiungi una colonna per il livello del Pokémon (può essere null)
             $table->integer('attack')->nullable(); // Aggiungi una colonna per il attack del Pokémon
-            $table->boolean('captured')->default(false); // Aggiungi una colonna per indicare se il Pokémon è stato catturato o meno
+            $table->text('img'); // Aggiungi una colonna per indicare se il Pokémon è stato catturato o meno
             $table->text('description')->nullable(); // Aggiungi una colonna per una descrizione del Pokémon (può essere null)
 
             $table->timestamps();
