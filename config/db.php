@@ -6,7 +6,7 @@ return [ 'pokemons' => [
         "type" => "Electric",
         "level" => 25,
         "attack" => 55,
-        "img" => "https://example.com/pikachu.jpg",
+        "img" => "https://www.itl.cat/pngfile/big/226-2262139_detective-pikachu-wallpaper-for-mobile.jpg",
         "description" => "A cute and powerful Electric-type Pokémon."
     ],
     [
@@ -14,7 +14,7 @@ return [ 'pokemons' => [
         "type" => "Fire/Flying",
         "level" => 36,
         "attack" => 84,
-        "img" => "https://example.com/charizard.jpg",
+        "img" => "https://lasercraftum.com/cdn/shop/products/charizard-pokemon-layered-design-for-cutting-718_1200x1200.jpg?v=1660557599",
         "description" => "A powerful Fire/Flying-type Pokémon known for its blazing wings."
     ],
     [
@@ -22,7 +22,7 @@ return [ 'pokemons' => [
         "type" => "Grass/Poison",
         "level" => 15,
         "attack" => 49,
-        "img" => "https://example.com/bulbasaur.jpg",
+        "img" => "https://images.saymedia-content.com/.image/t_share/MTc2Mjk3OTE1NzAxMDExNjI5/pokemon-bulbasaur-nicknames.jpg",
         "description" => "A cute Grass/Poison-type Pokémon with a plant bulb on its back."
     ],
     [
@@ -30,7 +30,7 @@ return [ 'pokemons' => [
         "type" => "Water",
         "level" => 18,
         "attack" => 48,
-        "img" => "https://example.com/squirtle.jpg",
+        "img" => "https://images-ext-1.discordapp.net/external/OWuA5CcU5jJr7_mtOhJbDsF-AGs-3KYmnC21DXCnMKI/https/picsum.photos/id/237/200/300?format=webp&width=225&height=332",
         "description" => "A Water-type Pokémon with a shell on its back."
     ],
     [

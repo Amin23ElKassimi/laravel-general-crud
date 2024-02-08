@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
+use App\Models\Pokemon;
 use Illuminate\Http\Request;
 
 class PokemonController extends Controller
@@ -13,6 +14,10 @@ class PokemonController extends Controller
     public function index()
     {
         //
+                //Inizializzo una variabile che fa la get all sul Model Pokemons 
+                $pokemons = Pokemon::all();
+                // dd($movies);
+                return view('pokemons.index', compact('pokemons'));
     }
 
     /**
@@ -34,9 +39,12 @@ class PokemonController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Pokemon $pokemon)
     {
         //
+        // dd($pasta);
+         return view('pokemons.show', compact('pokemon'));
+
     }
 
     /**

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('pokemons', function (Blueprint $table) {
             $table->id();
             // Ino Pokemon database
-            $table->string('name')->unique(); // Aggiungi una colonna per il nome del Pokémon
+            $table->string('name'); // Aggiungi una colonna per il nome del Pokémon
             $table->text('type'); // Aggiungi una colonna per il tipo del Pokémon
             $table->integer('level')->nullable(); // Aggiungi una colonna per il livello del Pokémon (può essere null)
             $table->integer('attack')->nullable(); // Aggiungi una colonna per il attack del Pokémon
