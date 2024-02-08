@@ -30,7 +30,7 @@ return [ 'pokemons' => [
         "type" => "Water",
         "level" => 18,
         "attack" => 48,
-        "img" => "https://images-ext-1.discordapp.net/external/OWuA5CcU5jJr7_mtOhJbDsF-AGs-3KYmnC21DXCnMKI/https/picsum.photos/id/237/200/300?format=webp&width=225&height=332",
+        "img" => "https://cdn.dribbble.com/users/5592443/screenshots/14279545/drbl_pokemon_squirtle_4x.png",
         "description" => "A Water-type Pokémon with a shell on its back."
     ],
     [
@@ -38,7 +38,7 @@ return [ 'pokemons' => [
         "type" => "Normal/Fairy",
         "level" => 20,
         "attack" => 45,
-        "img" => "https://example.com/jigglypuff.jpg",
+        "img" => "https://ssb.wiki.gallery/images/d/d8/Jigglypuff_SSBB.jpg",
         "description" => "A cute Normal/Fairy-type Pokémon known for its soothing lullabies."
     ],
     [
@@ -46,7 +46,7 @@ return [ 'pokemons' => [
         "type" => "Water/Flying",
         "level" => 30,
         "attack" => 125,
-        "img" => "https://example.com/gyarados.jpg",
+        "img" => "https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-blue-version/e/e4/Gyarados.jpg",
         "description" => "A powerful Water/Flying-type Pokémon capable of causing massive destruction."
     ],
     [
@@ -54,7 +54,7 @@ return [ 'pokemons' => [
         "type" => "Psychic",
         "level" => 40,
         "attack" => 135,
-        "img" => "https://example.com/alakazam.jpg",
+        "img" => "https://facts.net/wp-content/uploads/2023/07/18-facts-about-alakazam-1689385517.jpg",
         "description" => "A Psychic-type Pokémon known for its extraordinary psychic powers."
     ],
     [
@@ -62,7 +62,7 @@ return [ 'pokemons' => [
         "type" => "Psychic",
         "level" => 70,
         "attack" => 150,
-        "img" => "https://example.com/mewtwo.jpg",
+        "img" => "https://printler.com/media/photo/145974.jpg",
         "description" => "A legendary Psychic-type Pokémon created by genetic manipulation."
     ],
     [
@@ -70,7 +70,7 @@ return [ 'pokemons' => [
         "type" => "Normal",
         "level" => 50,
         "attack" => 110,
-        "img" => "https://example.com/snorlax.jpg",
+        "img" => "https://i.pinimg.com/736x/12/8d/e8/128de8ce51ee0c498a4dfa67610f5843.jpg",
         "description" => "A massive and sleepy Normal-type Pokémon known for its insatiable appetite."
     ],
     [
@@ -78,7 +78,7 @@ return [ 'pokemons' => [
         "type" => "Dragon/Flying",
         "level" => 55,
         "attack" => 134,
-        "img" => "https://example.com/dragonite.jpg",
+        "img" => "https://archives.bulbagarden.net/media/upload/thumb/0/05/Lance_Dragonite.png/1200px-Lance_Dragonite.png",
         "description" => "A powerful Dragon/Flying-type Pokémon capable of flying around the world in just one day."
     ]
 ]];

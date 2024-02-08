@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\Guest\PokemonController as GuestPokemonController;
+use App\Models\Pokemon;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+
 Route::get('/', function () {
-    return view('pages.home');
+    
+$pokemons = Pokemon::all();
+
+return view('pokemons.index', compact('pokemons'));
+
 });
 
 

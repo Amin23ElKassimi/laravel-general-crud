@@ -2,16 +2,15 @@
 
 @section('main-content')
     <h1>
-        Home
+        Pokemons
     </h1>
 <div class="container">
 <div class="row">
     @foreach ($pokemons as $pokemon)
-
-            <div class="col-3">
+    <div class="card" style="width: 18rem;">
                 <a href="{{ route('pokemons.show', $pokemon->id) }}">
                     <div class="card">
-                        <img src="{{ $pokemon->img }}" alt="{{ $pokemon->name }} picture">
+                        <img src="{{ $pokemon->img }}" alt="{{ $pokemon->name }} picture"  >
                         <div class="card-body">
                             <p class="text-uppercase">
                                 {{ $pokemon->name}}
@@ -19,7 +18,7 @@
                         </div>
                     </div>
                 </a>
-            </div>
+        </div>
     @endforeach
 </div>
 </div>
