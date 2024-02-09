@@ -33,7 +33,7 @@ class PokemonController extends Controller
      */
     public function store(Request $request)
     {
-        $newPokemonData = $request();
+        $newPokemonData = $request()->all();
 
      $newPokemon = new Pokemon();
      $newPokemon->name = $newPokemonData['name'];
