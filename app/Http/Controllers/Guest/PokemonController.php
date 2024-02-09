@@ -14,10 +14,10 @@ class PokemonController extends Controller
     public function index()
     {
         //
-                //Inizializzo una variabile che fa la get all sul Model Pokemons 
-                $pokemons = Pokemon::all();
-                // dd($movies);
-                return view('pokemons.index', compact('pokemons'));
+        //Inizializzo una variabile che fa la get all sul Model Pokemons 
+        $pokemons = Pokemon::all();
+        // dd($movies);
+        return view('pokemons.index', compact('pokemons'));
     }
 
     /**
@@ -43,8 +43,7 @@ class PokemonController extends Controller
     {
         //
         // dd($pasta);
-         return view('pokemons.show', compact('pokemon'));
-
+        return view('pokemons.show', compact('pokemon'));
     }
 
     /**
@@ -66,8 +65,9 @@ class PokemonController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Pokemon $pokemon)
     {
-        //
+        $pokemon->delite();
+        return redirect()->route('pokemons.index');
     }
 }
