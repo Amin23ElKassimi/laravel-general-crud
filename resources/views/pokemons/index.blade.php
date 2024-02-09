@@ -2,7 +2,7 @@
 
 @section('main-content')
     <h1>
-        Ciao Pippa
+        Pokedex
     </h1>
 <div class="container">
 <div class="row">
