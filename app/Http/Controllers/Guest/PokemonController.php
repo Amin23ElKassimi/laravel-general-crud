@@ -14,7 +14,7 @@ class PokemonController extends Controller
     public function index()
     {
         //
-        //Inizializzo una variabile che fa la get all sul Model Pokemons 
+        //Inizializzo una variabile che fa la get all sul Model Pokemons
         $pokemons = Pokemon::all();
         // dd($movies);
         return view('pokemons.index', compact('pokemons'));
@@ -33,7 +33,19 @@ class PokemonController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $newPokemonData = $request();
+
+     $newPokemon = new Pokemon();
+     $newPokemon->name = $newPokemonData['name'];
+     $newPokemon->type = $newPokemonData['name'];
+     $newPokemon->level = $newPokemonData['name'];
+     $newPokemon->attack = $newPokemonData['name'];
+     $newPokemon->img = $newPokemonData['name'];
+     $newPokemon->description = $newPokemonData['name'];
+
+     $newPokemon->save();
+
+     return redirect()->route('pokemons.show', $newPokemon->id);
     }
 
     /**
