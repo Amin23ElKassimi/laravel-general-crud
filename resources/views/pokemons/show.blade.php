@@ -28,13 +28,13 @@
                             <div class="card-image">
                                 <img class="w-50" src="{{  $pokemon->img }}" alt="{{ $pokemon->name }}'s picture">
                             </div>
-                            {{-- <div class="actions mb-3 pt-3">
+                            <div class="actions mb-3 pt-3">
                                 <a href="{{ route('pokemons.edit', $pokemon->id) }}">
                                     <button class="btn btn-primary">
-                                        Modifica questo il Film
+                                        Modifica il Pokémon
                                     </button>
                                 </a>
-                            </div> --}}
+                            </div>
                         </div>
                     </div>
                 </div>
