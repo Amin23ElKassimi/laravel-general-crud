@@ -14,7 +14,7 @@ class PokemonController extends Controller
     public function index()
     {
         //
-        //Inizializzo una variabile che fa la get all sul Model Pokemons 
+        //Inizializzo una variabile che fa la get all sul Model Pokemons
         $pokemons = Pokemon::all();
         // dd($movies);
         return view('pokemons.index', compact('pokemons'));
@@ -25,7 +25,7 @@ class PokemonController extends Controller
      */
     public function create()
     {
-        //
+        return view('pokemons.create');
     }
 
     /**
@@ -33,7 +33,9 @@ class PokemonController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       $newPokemonData = $request->all();
+
+       $newPokemon = new Pokemon();
     }
 
     /**
