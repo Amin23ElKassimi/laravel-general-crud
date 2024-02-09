@@ -37,11 +37,11 @@ class PokemonController extends Controller
 
      $newPokemon = new Pokemon();
      $newPokemon->name = $newPokemonData['name'];
-     $newPokemon->type = $newPokemonData['name'];
-     $newPokemon->level = $newPokemonData['name'];
-     $newPokemon->attack = $newPokemonData['name'];
-     $newPokemon->img = $newPokemonData['name'];
-     $newPokemon->description = $newPokemonData['name'];
+     $newPokemon->type = $newPokemonData['type'];
+     $newPokemon->level = $newPokemonData['level'];
+     $newPokemon->attack = $newPokemonData['attack'];
+     $newPokemon->img = $newPokemonData['img'];
+     $newPokemon->description = $newPokemonData['description'];
 
      $newPokemon->save();
 
