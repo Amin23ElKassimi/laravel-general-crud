@@ -31,7 +31,7 @@
                             <button>
                                 Modifica
                             </button>
-                            <form action="{{ route('pokemons.delete', $pokemon->id) }}" method="POST"> 
+                            <form action="{{ route('pokemons.delete', $pokemon->id) }}" method="POST" id="destroyer-button" data-pokemon="{{ $pokemon->name }}"> 
                                 @csrf
                                 @method('DELETE')                        
                                 <button type="submit">
@@ -52,4 +52,21 @@
             </div>
         </div>
     </section>
+@endsection
+
+@section('script-content')
+<script>
+    const buttonDeleteForm = document.querySelectorAll('#destroyer-button');
+    buttonDeleteForm.forEach(form => {
+        form.addEventListener('click', function(event) {
+            event.preventDefault();
+            const pokemonName = this.getAttribute('data-pokemon');
+            const confirmWindow = window.confirm(`Sei sicuro di voler ELIMINARE ${pokemonName}`);
+            if(confirmWindow){
+                this.submit();
+            }
+        });
+        
+    });
+</script>
 @endsection
