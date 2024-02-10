@@ -33,8 +33,19 @@ class PokemonController extends Controller
      */
     public function store(Request $request)
     {
-     
+        $newPokemonData = $request->all();
 
+     $newPokemon = new Pokemon();
+     $newPokemon->name = $newPokemonData['name'];
+     $newPokemon->type = $newPokemonData['type'];
+     $newPokemon->level = $newPokemonData['level'];
+     $newPokemon->attack = $newPokemonData['attack'];
+     $newPokemon->img = $newPokemonData['img'];
+     $newPokemon->description = $newPokemonData['description'];
+
+     $newPokemon->save();
+
+     return redirect()->route('pokemons.show', $newPokemon->id);
     }
 
     /**
