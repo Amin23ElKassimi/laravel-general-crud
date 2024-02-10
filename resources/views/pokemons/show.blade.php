@@ -31,6 +31,11 @@
                             <button>
                                 Modifica
                             </button>
+                            <a href=" {{ route('pokemons.delete', $pokemon->id) }}">
+                                <button>
+                                    Elimina
+                                </button>
+                            </a>
                             
                             {{-- <div class="actions mb-3 pt-3">
                                 <a href="{{ route('pokemons.edit', $pokemon->id) }}">
