@@ -10,4 +10,12 @@ class Pokemon extends Model
     use HasFactory;
     // Riassegnazione del nome della Tabella
     public $table = 'pokemons';
+    protected $fillable = [
+        'name',
+        'type',
+        'level',
+        'attack',
+        'img',
+        'description',
+    ];
 }

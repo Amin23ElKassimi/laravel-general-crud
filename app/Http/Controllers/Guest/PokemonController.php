@@ -50,17 +50,21 @@ class PokemonController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Pokemon $pokemon)
     {
-        //
+        // $pokemon=Pokemon::findOrFail($id);
+        return view('pokemons.edit', compact('pokemon'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Pokemon $pokemon)
     {
-        //
+        // dd($request->all());
+        $data=$request->all();
+        $pokemon->update($data);
+        return redirect()->route('pokemons.show', $pokemon->id);
     }
 
     /**
