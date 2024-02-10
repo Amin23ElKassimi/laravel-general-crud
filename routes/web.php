@@ -32,4 +32,4 @@ Route::get('/pokemons/create', [GuestPokemonController::class, 'create'])->name(
 Route::get('/pokemons/{pokemon}', [GuestPokemonController::class, 'show'])->name('pokemons.show');
 Route::get('/pokemons/{pokemon}/edit', [GuestPokemonController::class, 'edit'])->name('pokemons.edit');
 Route::put('/pokemons/{pokemon}', [GuestPokemonController::class, 'update'])->name('pokemons.update');
-Route::get('/pokemons/{pokemon}', [GuestPokemonController::class, 'destroy'])->name('pokemons.delete');
+Route::delete('/pokemons/{pokemon}', [GuestPokemonController::class, 'destroy'])->name('pokemons.delete');

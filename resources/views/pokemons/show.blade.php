@@ -31,11 +31,13 @@
                             <button>
                                 Modifica
                             </button>
-                            <a href=" {{ route('pokemons.delete', $pokemon->id) }}">
-                                <button>
+                            <form action="{{ route('pokemons.delete', $pokemon->id) }}" method="POST"> 
+                                @csrf
+                                @method('DELETE')                        
+                                <button type="submit">
                                     Elimina
                                 </button>
-                            </a>
+                            </form>
                             
                             {{-- <div class="actions mb-3 pt-3">
                                 <a href="{{ route('pokemons.edit', $pokemon->id) }}">
