@@ -16,7 +16,7 @@ class PokemonSeeder extends Seeder
         //
         $pokemons = config('db.pokemons');
 
-        foreach($pokemons as $pokemonItem) {
+        foreach ($pokemons as $pokemonItem) {
             $actualpokemon = new Pokemon();
             $actualpokemon->name = $pokemonItem['name'];
             $actualpokemon->type = $pokemonItem['type'];
@@ -26,6 +26,5 @@ class PokemonSeeder extends Seeder
             $actualpokemon->description = $pokemonItem['description'];
             $actualpokemon->save();
         }
-
     }
 }
