@@ -1,4 +1,5 @@
 <?php
+
 use App\Http\Controllers\Guest\PokemonController as GuestPokemonController;
 use App\Models\Pokemon;
 use Illuminate\Support\Facades\Route;
@@ -18,11 +19,10 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    
-$pokemons = Pokemon::all();
 
-return view('pokemons.index', compact('pokemons'));
+    $pokemons = Pokemon::all();
 
+    return view('pokemons.index', compact('pokemons'));
 });
 
 
@@ -32,4 +32,4 @@ Route::get('/pokemons/create', [GuestPokemonController::class, 'create'])->name(
 Route::get('/pokemons/{pokemon}', [GuestPokemonController::class, 'show'])->name('pokemons.show');
 Route::get('/pokemons/{pokemon}/edit', [GuestPokemonController::class, 'edit'])->name('pokemons.edit');
 Route::put('/pokemons/{pokemon}', [GuestPokemonController::class, 'update'])->name('pokemons.update');
-
+Route::get('/pokemons/{pokemon}', [GuestPokemonController::class, 'destroy'])->name('pokemons.delete');
