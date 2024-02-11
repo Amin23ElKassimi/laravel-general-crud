@@ -37,7 +37,7 @@
                             <form action="{{ route('pokemons.delete', $pokemon->id) }}" method="POST" id="destroyer-button" data-pokemon="{{ $pokemon->name }}"> 
                                 @csrf
                                 @method('DELETE')                        
-                                <button type="submit">
+                                <button type="submit" class="btn btn-warning mt-3">
                                     Elimina
                                 </button>
                             </form>
