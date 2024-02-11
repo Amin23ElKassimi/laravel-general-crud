@@ -25,6 +25,8 @@ Route::get('/', function () {
     return view('pokemons.index', compact('pokemons'));
 });
 
+Route::get('/', function () { return view('pages.home');})->name('pages.home');
+
 
 Route::get('/pokemons', [GuestPokemonController::class, 'index'])->name('pokemons.index');
 Route::post('/pokemons', [GuestPokemonController::class, 'store'])->name('pokemons.store');

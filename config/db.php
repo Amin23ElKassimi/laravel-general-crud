@@ -78,7 +78,7 @@ return [ 'pokemons' => [
         "type" => "Dragon/Flying",
         "level" => 55,
         "attack" => 134,
-        "img" => "https://archives.bulbagarden.net/media/upload/thumb/0/05/Lance_Dragonite.png/1200px-Lance_Dragonite.png",
+        "img" => "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.pokemonpets.com%2Fimages%2Fmonsters-images-800-800%2F149-Dragonite.png&f=1&nofb=1&ipt=00949f2e8f1603dfa4cb5aed04113bbda3faa41e1a59f5017df229db1b290281&ipo=images",
         "description" => "A powerful Dragon/Flying-type Pokémon capable of flying around the world in just one day."
     ]
 ]];
