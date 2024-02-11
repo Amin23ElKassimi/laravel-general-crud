@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('main-content')
-    <h1>
+    <h1 class="text-center m-3">
         Pokédex
     </h1>
 <div class="container">
