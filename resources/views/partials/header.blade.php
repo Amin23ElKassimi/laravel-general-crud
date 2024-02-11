@@ -19,6 +19,12 @@
                         Nuovo/a Pokemon:
                     </a>
                 </li>
+
+                <li class="p-3 {{ ( Route::currentRouteName() == 'pokemons.deleted') ? 'active' : '' }}">
+                    <a href="{{ route('pokemons.deleted') }}">
+                        Pokemon Eliminati:
+                    </a>
+                </li>
             </ul>
         </nav>
     </section>
