@@ -35,17 +35,17 @@ class PokemonController extends Controller
     {
         $newPokemonData = $request->all();
 
-     $newPokemon = new Pokemon();
-     $newPokemon->name = $newPokemonData['name'];
-     $newPokemon->type = $newPokemonData['type'];
-     $newPokemon->level = $newPokemonData['level'];
-     $newPokemon->attack = $newPokemonData['attack'];
-     $newPokemon->img = $newPokemonData['img'];
-     $newPokemon->description = $newPokemonData['description'];
+        $newPokemon = new Pokemon();
+        $newPokemon->name = $newPokemonData['name'];
+        $newPokemon->type = $newPokemonData['type'];
+        $newPokemon->level = $newPokemonData['level'];
+        $newPokemon->attack = $newPokemonData['attack'];
+        $newPokemon->img = $newPokemonData['img'];
+        $newPokemon->description = $newPokemonData['description'];
 
-     $newPokemon->save();
+        $newPokemon->save();
 
-     return redirect()->route('pokemons.show', $newPokemon->id);
+        return redirect()->route('pokemons.show', $newPokemon->id);
     }
 
     /**
@@ -73,7 +73,7 @@ class PokemonController extends Controller
     public function update(Request $request, Pokemon $pokemon)
     {
         // dd($request->all());
-        $data=$request->all();
+        $data = $request->all();
         $pokemon->update($data);
         return redirect()->route('pokemons.show', $pokemon->id);
     }
@@ -85,5 +85,14 @@ class PokemonController extends Controller
     {
         $pokemon->delete();
         return redirect()->route('pokemons.index');
+    }
+
+    /**
+     * Recover deleted storage.
+     */
+    public function deletedPokemons()
+    {
+        $pokemons = Pokemon::onlyTrashed()->get();
+        return view('pokemons.deleted', compact('pokemons'));
     }
 }

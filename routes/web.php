@@ -25,9 +25,12 @@ Route::get('/', function () {
     return view('pokemons.index', compact('pokemons'));
 });
 
+Route::get('/', function () { return view('pages.home');})->name('pages.home');
+
 
 Route::get('/pokemons', [GuestPokemonController::class, 'index'])->name('pokemons.index');
 Route::post('/pokemons', [GuestPokemonController::class, 'store'])->name('pokemons.store');
+Route::get('/pokemons/deleted', [GuestPokemonController::class, 'deletedPokemons'])->name('pokemons.deleted');
 Route::get('/pokemons/create', [GuestPokemonController::class, 'create'])->name('pokemons.create');
 Route::get('/pokemons/{pokemon}', [GuestPokemonController::class, 'show'])->name('pokemons.show');
 Route::get('/pokemons/{pokemon}/edit', [GuestPokemonController::class, 'edit'])->name('pokemons.edit');

@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Pokemon extends Model
 {
     use HasFactory;
-    // use SoftDeletes;
+    use SoftDeletes;
     // Riassegnazione del nome della Tabella
     public $table = 'pokemons';
     protected $fillable = [
