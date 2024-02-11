@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('type'); // Aggiungi una colonna per il tipo del Pokémon
             $table->integer('level')->nullable(); // Aggiungi una colonna per il livello del Pokémon (può essere null)
             $table->integer('attack')->nullable(); // Aggiungi una colonna per il attack del Pokémon
-            $table->text('img'); // Aggiungi una colonna per indicare se il Pokémon è stato catturato o meno
+            $table->text('img'); // Aggiungi una foto del Pokémon
             $table->text('description')->nullable(); // Aggiungi una colonna per una descrizione del Pokémon (può essere null)
 
             $table->timestamps();
