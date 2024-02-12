@@ -1,13 +1,8 @@
 @extends('layouts.app')
 
 @section('main-content')
-<<<<<<< HEAD
-    <h1>
-        Pokédex:
-=======
     <h1 class="text-center m-3">
         Pokédex
->>>>>>> 10bfb71fa16d1e9710749d91761685edc77ea77f
     </h1>
     <div class="container">
         <div class="row">
